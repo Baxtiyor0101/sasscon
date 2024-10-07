@@ -1,0 +1,20 @@
+nav {
+  background-color: $main-bg-color;
+  color: $text-color;
+  padding: double(2);
+
+  position: fixed;
+  top: 0;
+  width: 100%;
+  ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    li {
+      a {
+        color: #fff;
+        text-decoration: none;
+      }
+    }
+  }
+}

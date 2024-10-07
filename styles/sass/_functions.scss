@@ -1,0 +1,42 @@
+// @function double($number) {
+//   @return $number * 5px;
+// }
+
+// @function standartBorder($color, $type, $style) {
+//   @if ($type == "small") {
+//     @return 5px $style $color;
+//   } @else if($type == "medium") {
+//     @return 10px $style $color;
+//   } @else if($type == "large") {
+//     @return 20px $style $color;
+//   } @else {
+//     @return 10px solid blue;
+//   }
+// }
+
+// @mixin buttontype($width, $color) {
+//   width: $width;
+//   color: $color;
+// }
+
+// @function button($color, $type) {
+//   @if ($type == "small") {
+//     @return $buttontype(100px, $color);
+//   } @else if($type == "medium") {
+//     @return $buttontype(200px, $color);
+//   } @else if($type == "large") {
+//     @return $buttontype(300px, $color);
+//   } @else {
+//     @return $buttontype(200px, $color);
+//   }
+// }
+
+@function buttonTest($type: "kichik", $color: blue, $style: solid) {
+  @if ($type== "kichik") {
+    @return 5px $style $color;
+  }  @else if ($type== "ortacha") {
+    @return 10px $style $color;
+  } @else if ($type== "katta") {
+    @return 15px $style $color;
+  }
+}

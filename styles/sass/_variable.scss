@@ -1,0 +1,22 @@
+$main-bg-color: lighten(#014e56, 10%);
+// $main-bg-color: darken(#014e56, 100%);
+// $main-bg-color: adjust-hue(red, 200deg);
+
+$text-color: #fff;
+
+$colors: (
+  primary: #3498db,
+  secondary: #2ecc71,
+  danger: #e74c3c,
+  success: #27ae60,
+  warning: #f1c40f,
+  info: #34495e,
+  light: #ecf0f1,
+  dark: #34495e,
+);
+
+$sizes: (
+  small: 1rem,
+  medium: 2rem,
+  large: 3rem,
+);

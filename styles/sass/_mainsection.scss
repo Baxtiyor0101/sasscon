@@ -1,0 +1,26 @@
+main {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  h1 {
+    font-size: 3rem;
+    text-align: center;
+    margin: 0;
+    color: #333;
+  }
+  p {
+    font-size: 1.5rem;
+    margin: 0;
+    color: #333;
+  }
+
+  .box {
+    width: 300px;
+    height: 300px;
+    background-color: #d84343;
+    border-radius: 5px;
+    border: standartBorder(yellow, "medijum", dashed);
+  }
+}

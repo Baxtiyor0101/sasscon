@@ -1,0 +1,60 @@
+@import "variable";
+
+@for $i from 0 to 10 {
+  .m-#{$i} {
+    margin: $i * 0.5rem;
+  }
+  .my-#{$i} {
+    margin-top: $i * 0.5rem;
+    font-size: $i * 10px;
+  }
+  .mr-#{$i} {
+    margin-right: $i * 0.5rem;
+  }
+  .mb-#{$i} {
+    margin-bottom: $i * 0.5rem;
+  }
+  .ml-#{$i} {
+    margin-left: $i * 0.5rem;
+  }
+  .p-#{$i} {
+    padding: $i * 0.5rem;
+  }
+  .pt-#{$i} {
+    padding-top: $i * 0.5rem;
+  }
+  .pr-#{$i} {
+    padding-right: $i * 0.5rem;
+  }
+  .pb-#{$i} {
+    padding-bottom: $i * 0.5rem;
+  }
+  .pl-#{$i} {
+    padding-left: $i * 0.5rem;
+  }
+  .px-#{$i} {
+    padding-left: $i * 0.5rem;
+    padding-right: $i * 0.5rem;
+  }
+  .py-#{$i} {
+    padding-top: $i * 0.5rem;
+    padding-bottom: $i * 0.5rem;
+  }
+}
+
+@each $name, $color in $colors {
+  .button-#{$name} {
+    background-color: $color;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+  }
+}
+@each $name, $size in $sizes {
+  .button-#{$name} {
+    background-color: $size;
+    width: $size * 2;
+  }
+}

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/css/minified/main.min.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+    <main class="main-content">
+      <div class="text"></div>
+      <h1 style="writing-mode: vertical-lr">Lorem, ipsum dolor.</h1>
+      <h1 style="background-color: aqua;" class="px-9">Welcome to our website</h1>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel ligula
+        ut velit mollis consectetur. Sed consectetur libero at dolor elementum,
+        in feugiat neque ullamcorper. Integer vel dolor ac justo ullamcorper
+        ultricies vel sit amet sapien. Sed vel ligula ut velit mollis
+        consectetur.
+      </p>
+      <button class="button-success">skdjcnskdcjnksd</button>
+    </main>
+    <footer>
+      <p>&copy; 2021 My Website. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
+
+<!-- 
+  build in functions -->
+<!-- lighten  -->
+<!-- darken -->
+<!-- adjust-hue -->
+<!-- functions
+        @function double($number){
+          @return $number*2
+        }
+        (padding:double(10px))
+
+
+        @function standartBorder($color,$tur){
+          @if($tur=="small"){
+            return 1px solid $$color
+          }@else if($tur=="medium"){
+            return 2px solid $$color
+          }
+          @else if($tur=="large"){
+            return 3px solid $$color
+          }
+        }
+-->
+
+<!-- loops
+@for $i from 0 to 6{
+  my-#{$i}{
+    margin-top:$i*0.5rem
+  }
+}
+-->
+
+<!-- 
+  map
+  $tomonlar:(
+    t:"top",
+    m:"middle",
+    b:"bottom"
+  )
+
+  $colors: (
+  primary: #3498db,
+  secondary: #2ecc71,
+  danger: #e74c3c
+);
+$primary-color: map-get($colors, primary); // #3498db
+
+$colors: (
+  primary: #3498db,
+  secondary: #2ecc71,
+  danger: #e74c3c
+);
+
+@each $name, $color in $colors {
+  .button-#{$name} {
+    background-color: $color;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+  }
+}
+
+ -->
+
+<!-- mixin
+
+@mixin rounded-corners($radius) {
+  border-radius: $radius;
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+
+  using
+  .button {
+  @include rounded-corners(10px);
+  background-color: #ff4081;
+  padding: 10px 20px;
+  color: white;
+}
+
+
+@mixin box-shadow($x: 0px, $y: 0px, $blur: 10px, $color: rgba(0, 0, 0, 0.5)) {
+  box-shadow: $x $y $blur $color;
+}
+
+.card {
+  @include box-shadow(5px, 5px);
+}
+
+}-->
+
+<!-- 
+  inheritance
+    .button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #ff4081;
+  color: white;
+}
+
+.alert {
+  @extend .button;
+  background-color: red;
+}
+ -->
+
+<!-- 
+  placeholder
+    %base-button {
+  padding: 10px 20px;
+  border-radius: 5px;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.button-primary {
+  @extend %base-button;
+  background-color: #ff4081;
+  color: white;
+}
+
+.button-secondary {
+  @extend %base-button;
+  background-color: #e0e0e0;
+  color: black;
+}
+  -->
+
+<!-- 
+  loop
+    for
+    each
+
+  map (map-get(value,mapname))
+  mixin(@include mixinname)
+  placeholder(% => @extend)
+  inheritance (@extend)
+  
+ -->

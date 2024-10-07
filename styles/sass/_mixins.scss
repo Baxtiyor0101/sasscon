@@ -1,0 +1,17 @@
+@mixin default($width, $height, $color) {
+  width: $width;
+  height: $height;
+  background-color: $color;
+  border-radius: 5px;
+  border: 1px solid #000;
+  margin: 10px;
+}
+
+@mixin fonts($fsize) {
+  font-family: Arial, sans-serif;
+  font-size: $fsize;
+  color: #333;
+  line-height: 1.5;
+  text-align: center;
+  font-weight: 900;
+}
